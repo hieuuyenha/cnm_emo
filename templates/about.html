@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html, body {
+                padding: 0px;
+                margin: 0px;
+                background: #ddebdd28;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                overflow-x: scroll;
+            }
+            .content {
+            width: 100%;
+        }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+
+    html {
+    box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+    .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    }
+
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    }
+
+    .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    }
+
+    .container {
+    padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .title {
+    color: grey;
+    }
+
+    .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    }
+
+    .button:hover {
+    background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+    }
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+            background-color: #111;
+            }
+
+            .active {
+            background-color: #04AA6D;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">HỆ THỐNG NHẬN DIỆN CẢM XÚC</a></li>
+        <li><a href="{{url_for('index')}}">Sử dụng file</a></li>
+        <li><a href="{{url_for('cam')}}">Sử dụng camera</a></li>
+        <li style="float:right"><a class="active" href="{{url_for('about')}}">About</a></li>
+    </ul>
+
+<h2 style="text-align:center">Thành viên nhóm</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>HÀ HIẾU UYÊN</h2>
+        <p class="title">MSSV:18090671</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>NGUYỄN NGỌC MỸ</h2>
+        <p class="title">MSSV:18070821</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>NGUYỄN VÕ THIÊN HÀ</h2>
+        <p class="title">MSSV:18077791</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

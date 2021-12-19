@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/templatemo-main.css">
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+        html, body {
+                padding: 0px;
+                margin: 0px;
+                background: #ddebdd28;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                overflow-x: scroll;
+            }
+            .content {
+            width: 100%;
+        }
+
+        .upload_part,container mt-5 {
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 40px;
+        }
+
+        .upload_button,btn btn-primary {
+            background-color: #a0d0ec;
+            color: black;
+            padding: 15px;
+            font-size: 16px;
+            border: 0px;
+            border-radius: 5px;
+            -webkit-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+            -moz-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+            box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+            cursor: pointer;
+        }
+
+        .upload_hint {
+            margin: 10px;
+            font-size: 17px;
+            color: rgb(219, 152, 152);
+        }
+        .result_part {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .result_title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .result_id {
+            padding: 10px;
+            margin: 15px;
+            font-size: 16px;
+
+        }
+
+        .result_id_number {
+            margin: 15px;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: #567064;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Emotion Detection with DEEPLEARING demo</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">HỆ THỐNG NHẬN DIỆN CẢM XÚC</a></li>
+        <li><a href="{{url_for('index')}}">Sử dụng file</a></li>
+        <li><a href="{{url_for('cam')}}">Sử dụng camera</a></li>
+        <li style="float:right"><a class="active" href="{{url_for('about')}}">About</a></li>
+    </ul>
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8  offset-lg-2">
+                    <h3 class="mt-5"><font color="white" style="font-family:verdana;" style="font-size:300%;"> Real Time Emotion Detection</font></h3>
+                    <img src="{{ url_for('video_feed') }}" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

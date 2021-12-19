@@ -1,0 +1,7 @@
+flask
+tensorflow
+# opencv-python
+numpy
+tensorflowjs
+opencv-python==4.5.3.56
+opencv-python-headless==4.5.3.56
